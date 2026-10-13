@@ -4,6 +4,13 @@ import networkx as nx
 
 def calculate_node_degrees(edges: list) -> dict:
     """Sub-task 1: Calculate the degree of each node in an undirected graph."""
+    if not edges:
+        return {}
+
+    G = nx.Graph()
+    G.add_edges_from(edges)
+
+    return dict(G.degree())
     pass
 
 def find_shortest_path(edges: list, source: str, target: str) -> list:
