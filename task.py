@@ -21,7 +21,6 @@ def find_shortest_path(edges: list, source: str, target: str) -> list:
     return nx.shortest_path(G, source=source, target=target)
     pass
 
-def count_connected_components(edges: list) -> int:
     """Sub-task 3: Count the number of connected components in an undirected graph."""
     pass
 
